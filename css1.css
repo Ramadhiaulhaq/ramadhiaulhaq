@@ -1,0 +1,130 @@
+ body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #c8c8c8;
+}
+
+.wrapper {
+  display: flex;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.header {
+  width: 920px;
+  height: 235px;
+  background-image: url(https://mikrotekno.com/wp-content/uploads/2020/10/apa-itu-basis-data.jpg);
+  background-size: 920px 235px;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav {
+  width: 920px;
+  height: 35px;
+  background-color: #0F0F0F;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 11px;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  display: block;
+  float: left;
+  color: #f6e9e9;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: gray;
+  border-radius: 8px;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  width: 20%;
+  height: auto;
+}
+
+.main {
+  background-color: white;
+  padding: 5px 15px;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.main p {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.main li {
+  text-align: left;
+  font-size: 19px;
+  font-weight: bold;
+}
+/*gambar kiri atas*/
+#imgkiri {
+  float: left;
+  margin-left: 5px;
+  width: 300px;
+  height: 200px;
+}
+
+.footer {
+  width: 920px;
+  height: 35px;
+  background-color: #383838;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 15px 0 0;
+  clear: both;
+  border-radius: 0 0 10px 10px;
+}
+
+.time {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 2;
+  }
+  .aside1 {
+    flex: 2;
+  }
+  .main {
+    order: 1;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside1 {
+    flex: 1;
+  }
+}

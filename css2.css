@@ -1,0 +1,213 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #c8c8c8;
+}
+/**/
+.wrapper {
+  display: flex;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+/*header*/
+.header {
+  width: 920px;
+  height: 235px;
+  background-image: url(https://mikrotekno.com/wp-content/uploads/2020/10/apa-itu-basis-data.jpg);
+  background-size: 920px 235px;
+  border-radius: 10px 10px 0 0;
+}
+/*navigasi*/
+.nav {
+  width: 920px;
+  height: 35px;
+  background-color: #03191c;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 11px;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  display: block;
+  float: left;
+  color: #f6e9e9;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: gray;
+  border-radius: 8px;
+}
+/*konten contact us*/
+.main {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.main p{
+padding: 0 20px 0 20px;
+}
+
+.form-container {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  width: 60%;
+}
+
+.container h1 {
+  text-align: left;
+  font-size: 37px;
+  margin: 15px 0 0 75px;
+}
+
+.header-text p {
+  text-align: justify;
+}
+
+.header-image {
+  width: 170px;
+  height: auto;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #1a1711;
+  background: #fbfafc;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4512bb;
+  color: #f9eeee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0a0116;
+}
+/*konten about us*/
+.container2 {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.container2 h1 {
+  text-align: left;
+  font-size: 40px;
+}
+
+.about-section {
+  display: flex;
+  background: #383838;
+  border-radius: 10px;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+.about-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0 20px 20px;
+}
+
+.about-text {
+  text-align: justify;
+  color: #f1f1f1;
+  padding: 0 20px;
+}
+
+/*footer*/
+.footer {
+  width: 920px;
+  height: 35px;
+  background-color: #383838;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 15px 0 0;
+  clear: both;
+  border-radius: 0 0 10px 10px;
+}
+/*java script*/
+.time {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 2;
+  }
+  .aside1 {
+    flex: 2;
+  }
+  .main {
+    order: 1;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside1 {
+    flex: 1;
+  }
+}

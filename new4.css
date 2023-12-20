@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #c8c8c8;
+}
+
+.wrapper {
+  display: flex;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.header {
+  width: 920px;
+  height: 235px;
+  background-image: url(https://mikrotekno.com/wp-content/uploads/2020/10/apa-itu-basis-data.jpg);
+  background-size: 920px 235px;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav {
+  width: 920px;
+  height: 35px;
+  background-color: #03191c;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 11px;
+  position: sticky;
+  top: 0;
+}
+
+.nav a {
+  display: block;
+  float: left;
+  color: #f6e9e9;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.galery {
+  margin: 10px 10px 40px;
+  float: left;
+  width: 200px;
+  height: auto;
+  border: 4px solid #383838;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  border-radius: 9px 9px 0 0;
+}
+
+.box {
+  width: 420px;
+  margin: 10px 10px 40px;
+  height: 285px;
+  float: left;
+  border: 1px solid #383838;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.box iframe {
+  width: 420px;
+  height: 230px;
+  border-radius: 9px 9px 0 0;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.main p {
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  width: 920px;
+  height: 35px;
+  background-color: #383838;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 15px 0 0;
+  clear: both;
+  border-radius: 0 0 10px 10px;
+}
+
+.time {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 2;
+  }
+  .aside1 {
+    flex: 2;
+  }
+  .main {
+    order: 1;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside1 {
+    flex: 1;
+  }
+}
